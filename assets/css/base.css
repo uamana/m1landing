@@ -1,0 +1,82 @@
+
+:root {
+    --color-primary: #EE0D21;
+    --color-text-primary: #ffffff;
+    --color-secondary: #FFFFFF;
+    --color-text-secondary: #B80414;
+    
+    --border-radius-sm: 20px;
+    --border-radius: 40px;
+    --border-radius-lg: 50px;
+
+    --color-text: #FFFFFF;
+    --color-bg: #1E1E1E;
+
+    /* Breakpoints (mobile-first) */
+    --bp-phone: 480px;   /* larger phones */
+    --bp-tablet: 768px;   /* tablets */
+    --bp-desktop: 1200px;  /* desktops */
+    --bp-desktop-lg: 1440px;  /* large desktops */
+
+    --gold: linear-gradient(
+        92deg, #FDB068 0.78%, #ECAD70 17.24%, #F7C38D 33.71%, #F8E2BE 50.17%,
+        #F8DBB2 66.64%, #FCC386 83.11%, #FEB066 99.57%
+    );
+}
+
+
+/* Modern CSS reset (minimal) */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}

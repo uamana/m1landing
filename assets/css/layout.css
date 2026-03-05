@@ -1,0 +1,13 @@
+/* Container */
+.container {
+    width: 100%;
+    padding: 0 5rem;
+}
+
+@media (min-width: var(--bp-desktop-lg)) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 60px;
+    }
+}
