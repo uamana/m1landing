@@ -2,6 +2,7 @@
     --color-primary: #EE0D21;
     --color-primary-dark: #B80414;
     --color-secondary: #FFFFFF;
+    --color-dark: #383838;
     --color-surface-muted: #383838;
 
     --color-text-primary: #ffffff;
@@ -12,6 +13,7 @@
         #F8DBB2 66.64%, #FCC386 83.11%, #FEB066 99.57%
     );
 
+    --border-radius-xs: 10px;
     --border-radius-sm: 20px;
     --border-radius: 40px;
     --border-radius-lg: 50px;
@@ -46,4 +48,6 @@
     --bp-tablet: 768px;   /* tablets */
     --bp-desktop: 1200px;  /* desktops */
     --bp-desktop-lg: 1440px;  /* large desktops */
+
+    --nav-height: 60px;
 }

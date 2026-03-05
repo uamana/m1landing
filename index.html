@@ -1,454 +1,508 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
 
-    <title>M-1</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/images/favicon-192x192.png" sizes="192x192">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-180x180.png">
-    
-    <link rel="stylesheet" href="assets/css/vendor/splide.min.css">
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/vars.css" />
-    <link rel="stylesheet" href="assets/css/fonts.css" />
-    <link rel="stylesheet" href="assets/css/layout.css" />
-    <link rel="stylesheet" href="assets/css/components.css" />
-    <link rel="stylesheet" href="assets/css/utils.css" />
-  </head>
-  <body>
-    <nav class="nav">
-        <div class="container">
-            <div class="nav__brand"></div>
-            <ul class="nav__links nav__links--desktop">
-                <li class="nav__link"><a href="#">О нас</a></li>
-                <li class="nav__link"><a href="#">Гостевые туры</a></li>
-                <li class="nav__link"><a href="#">Контакты</a></li>
-                <li class="nav__link"><a href="#">
-                    <div class="nav__phone">+ 375 21 375 30 04</div>
-                    <div class="nav__text">узнать подробности</div>
-                </a></li>
-                <li class="nav__link"><a href="#">Связаться</a></li>
-            </ul>
-            <ul class="nav__links nav__links--mobile">
-                <li class="nav__link"><a href="#">Связаться</a></li>
-            </ul>
+  <title>M-1</title>
+
+  <link rel="shortcut icon" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+  <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="assets/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/images/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/images/favicon-192x192.png" sizes="192x192">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/images/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/images/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon-180x180.png">
+
+  <link rel="stylesheet" href="assets/css/vendor/splide.min.css">
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/vars.css" />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
+  <link rel="stylesheet" href="assets/css/layout.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/utils.css" />
+</head>
+
+<body>
+  <nav class="nav" role="navigation" aria-label="main navigation">
+    <div class="container">
+      <div class="nav__brand">
+        <a href="/" class="nav__link">
+          <img src="assets/images/logo.png" alt="M-1">
+        </a>
+      </div>
+      <ul class="nav__links nav__links--desktop">
+        <li class="nav__link"><a href="#">О нас</a></li>
+        <li class="nav__link"><a href="#">Гостевые туры</a></li>
+        <li class="nav__link"><a href="#">Контакты</a></li>
+        <li class="nav__link"><a href="#">
+            <div class="nav__phone">+ 375 21 375 30 04</div>
+            <div class="nav__text">узнать подробности</div>
+          </a></li>
+        <li class="nav__link"><a href="#">Связаться</a></li>
+      </ul>
+      <ul class="nav__links nav__links--mobile nav__links--end">
+        <li class="nav__link">
+          <a href="#" class="btn btn--primary btn--sm">Связаться</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="header__overlay-top"></div>
+    <div class="header__overlay-bottom"></div>
+    <div class="container">
+      <div class="header__title">
+        Гостевые туры в Гостиничный комплекс с развлекательным центром «М-1»
+      </div>
+      <div class="header__subtitle">
+        Гостиница и казино | Граница Беларуси и России
+      </div>
+      <div class="header__button">
+        <a href="#" class="btn btn--primary btn--lg">
+          <span class="btn__label">Связаться</span>
+          <span class="btn__icon">
+            <img src="assets/images/icons/plus.svg" alt="arrow-right">
+          </span>
+        </a>
+      </div>
+      <div class="header__info">
+        <div class="header__info-item">
+          Индивидуальные программы с безупречным сервисом под ваш бюджет
         </div>
-    </nav>
-
-    <header class="header">
-        <div class="container">
-            <div class="header__title">
-                Гостевые туры в Гостиничный комплекс с развлекательным центром «М-1»
-            </div>
-            <div class="header__subtitle">
-                Гостиница и казино | Граница Беларуси и России
-            </div>
-            <div class="header__button"></div>
-            <div class="header__info">
-                <div class="header__info-item">
-                    Индивидуальные программы с безупречным сервисом под ваш бюджет
-                </div>
-                <div class="header__info-item">
-                    Более трех лет успешно организуем отдых
-                </div>
-                <div class="header__info-item">
-                    Возможность испытать удачу в одном из самых фешенебельныхзаведений Беларуси — казино «М-1»
-                </div>
-            </div>
+        <div class="header__info-item">
+          Более трех лет успешно организуем отдых
         </div>
-    </header>
-
-    <section class="section section--principals">
-        <div class="container">
-            <div class="section__header">
-                <div class="section__title">Наши принципы</div>
-                <div class="section__subtitle">
-                    Сохранить безупречную репутацию нам позволяет ответственный подход к процессу и высокие стандарты качества
-                </div>    
-            </div>
-            <div class="section__content">
-                <div class="cards cards--principals">
-                    <div class="card">
-                        <div class="card__image"></div>
-                        <div class="card__title">Полный пакет услуг</div>
-                        <div class="card__body">
-                            Включает: трансфер, проживание, питание, развлечения
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__image"></div>
-                        <div class="card__title">VIP-трансфер</div>
-                        <div class="card__body">
-                            На автомобилях Premium, Business класса 24/7 Встреча в аэропорту / на вокзале Организация VIP-зала
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card__image"></div>
-                        <div class="card__title">Проживание</div>
-                        <div class="card__body">Уютные номера в гостинице «М-1»</div>
-                    </div>
-                </div>
-            </div>
+        <div class="header__info-item">
+          Возможность испытать удачу в одном из самых фешенебельныхзаведений Беларуси — казино «М-1»
         </div>
-    </section>
+      </div>
+    </div>
+  </header>
 
-    <section class="section section--tours">
-        <div class="container">
-            <div class="section__header">
-                <div class="section__title">Условия туров</div>
-                <div class="section__subtitle">
-                    Мы прислушиваемся к каждому гостю и стараемся учесть все пожелания и предпочтения
-                </div>
-            </div>
-            <div class="section__content">
-                <div class="tour">
-                    <div class="tour-slider"></div>
-                    <div class="tour-info">
-                        <div class="tour-info__title">
-                            <div class="tour-info__title-name">Турпакет №10</div>
-                            <div class="tour-info__title-days">1 сутки</div>
-                        </div>
-                        <div class="tour-info__items">
-                            <div class="card">
-                                <div class="card__title">
-                                    Размещение
-                                </div>
-                                <div class="card__body">
-                                    Проживание в гостинице «М-1», тип номера: Стандартный номер dbl* или twin*
-                                    <ul class="card__notes">
-                                        <li>Dbl - номер со спальным местом размером 160х200 см.</li>
-                                        <li>Twin - номер с двумя спальными местами размером 90х200 см.</li>
-                                    </ul>
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                            <div class="card">
-                                <div class="card__title">
-                                    Питание
-                                </div>
-                                <div class="card__body">
-                                    Сертификат на услуги общественного питания в баре «М-1»
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                            <div class="card">
-                                <div class="card__title">
-                                    Организация экскурсионного обслуживания
-                                </div>
-                                <div class="card__price">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="badge badge--primary tour-info__price">
-                            <div class="badge__text tour-info__price-value">Стоимость: 330.00 BYN</div>
-                            <div class="badge__note tour-info__price-note">стоимость без учета авиа и/или ЖД</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tour">
-                    <div class="tour-slider"></div>
-                    <div class="tour-info">
-                        <div class="tour-info__title">
-                            <div class="tour-info__title-name">Турпакет №14</div>
-                            <div class="tour-info__title-days">2 суток</div>
-                        </div>
-                        <div class="tour-info__items">
-                            <div class="card">
-                                <div class="card__title">
-                                    Размещение
-                                </div>
-                                <div class="card__body">
-                                    Проживание в гостинице «М-1», тип номера: Номер люкс dbl*
-                                    <ul class="card__notes">
-                                        <li>Dbl - номер со спальным местом размером 160х200 см.</li>
-                                    </ul>
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                            <div class="card">
-                                <div class="tour-info__title">
-                                    Питание
-                                </div>
-                                <div class="card__body">
-                                    Сертификат на услуги общественного питания в баре «М-1»
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                            <div class="card">
-                                <div class="card__title">
-                                    Организация экскурсионного обслуживания
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                        </div>
-                        <div class="tour-info__price">
-                            <div class="tour-info__price-value">Стоимость: 630.00 BYN</div>
-                            <div class="tour-info__price-note">стоимость без учета авиа и/или ЖД</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tour">
-                    <div class="tour-slider"></div>
-                    <div class="tour-info">
-                        <div class="tour-info__title">
-                            <div class="tour-info__title-name">Турпакет №18</div>
-                            <div class="tour-info__title-days">3 суток</div>
-                        </div>
-                        <div class="tour-info__items">
-                            <div class="card">
-                                <div class="card__title">
-                                    Размещение
-                                </div>
-                                <div class="card__body">
-                                    Проживание в гостинице «М-1», тип номера: Президентский dbl*
-                                    <ul class="card__notes">
-                                        <li>Dbl - номер со спальным местом размером 160х200 см.</li>
-                                        <li>Twin - номер с двумя спальными местами размером 90х200 см.</li>
-                                    </ul>
-                                </div>
-                                <div class="card__price">
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card__title">
-                                    Питание
-                                </div>
-                                <div class="card__body">
-                                    Сертификат на услуги общественного питания в баре «М-1»
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                            <div class="card">
-                                <div class="card__title">
-                                    Организация экскурсионного обслуживания
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                        </div>
-                        <div class="tour-info__price">
-                            <div class="tour-info__price-value">Стоимость: 1&nbsp;130.00 BYN</div>
-                            <div class="tour-info__price-note">стоимость без учета авиа и/или ЖД</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tour">
-                    <div class="tour-slider"></div>
-                    <div class="tour-info">
-                        <div class="tour-info__title">
-                            <div class="tour-info__title-name">Турпакет №21</div>
-                            <div class="tour-info__title-days">1 сутки</div>
-                        </div>
-                        <div class="tour-info__items">
-                            <div class="card">
-                                <div class="card__title">
-                                    VIP-трансфер BUSINESS класс
-                                </div>
-                                <div class="card__body">
-                                    Автомобиль BUSINESS класса, 1(одна) поездка 
-                                    <ul class="card__notes">
-                                        <li>Национальный аэропорт Минск — Вокзал станции 
-                                            Орша-Центральная или Вокзал станции Орша-Центральная — Национальный аэропорт Минск
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="card__price">
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card__title">
-                                    Питание
-                                </div>
-                                <div class="card__body">
-                                    Сертификат на услуги общественного питания в баре «М-1»
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                            <div class="card">
-                                <div class="card__title">
-                                    Организация экскурсионного обслуживания
-                                </div>
-                                <div class="card__price"></div>
-                            </div>
-                        </div>
-                        <div class="tour-info__price">
-                            <div class="tour-info__price-value">Стоимость: 1&nbsp;130.00 BYN</div>
-                            <div class="tour-info__price-note">стоимость без учета авиа и/или ЖД</div>
-                        </div>
-                    </div>
-                </div>
-            </div>            
+  <section class="section section--principals">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__title">Наши принципы</div>
+        <div class="section__subtitle">
+          Сохранить безупречную репутацию нам позволяет ответственный подход к процессу и высокие стандарты качества
         </div>
-    </section>
-
-    <section class="section section--rules">
-        <div class="container">
-            <div class="section__header">
-                <div class="section__title">Порядок оказания услуг</div>
-                <div class="section__subtitle"></div>
+      </div>
+      <div class="section__content">
+        <div class="cards cards--principals splide">
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="card card--primary splide__slide">
+                <div class="card__image"></div>
+                <div class="card__title">Полный пакет услуг</div>
+                <div class="card__body">
+                  Включает: трансфер, проживание, питание, развлечения
+                </div>
+              </div>
+              <div class="card card--secondary splide__slide">
+                <div class="card__image"></div>
+                <div class="card__title">VIP-трансфер</div>
+                <div class="card__body">
+                  На автомобилях Premium, Business класса 24/7 Встреча в аэропорту / на вокзале Организация VIP-зала
+                </div>
+              </div>
+              <div class="card card--primary splide__slide">
+                <div class="card__image"></div>
+                <div class="card__title">Проживание</div>
+                <div class="card__body">Уютные номера в гостинице «М-1»</div>
+              </div>
             </div>
-            <div class="section__content">
-                <ol class="rules__list">
-                    <li class="rules__item">
-                        <div class="rules__item-title">Сроки и порядок оплаты туристических услуг</div>
-                        <div class="rules__item-text">
-                            <p>Производится Заказчиком:</p>
-                            <ul class="rules__item-list">
-                                <li>на расчетный счет Исполнителя, или</li>
-                                <li>в кассу туристических услуг Исполнителя</li>
-                            </ul>
-                            <p>Форма оплаты: 100% предоплата.</p>
-                            <p>
-                                В случае возникновения необходимости в получении Заказчиком туристических, а также
-                                дополнительных услуг, не вошедших в туристическое путешествие к ДОГОВОРУ:
-                            </p>
-                            <ul class="rules__item-list">
-                                <li>
-                                    услуги по оформлению въездных документов на маршруты туристического путешествия в 
-                                    Республику Беларусь (услуги визовой поддержки туристов, услуги по доставке документов 
-                                    в консульские учреждения);
-                                </li>
-                                <li>
-                                    услуга по размещению (организация, обеспечение) проживания, бронирование мест 
-                                    временного проживания;
-                                </li>
-                                <li>
-                                    организация по экскурсионному обслуживанию;
-                                </li>
-                                <li>
-                                    услуга по организации питания туриста;
-                                </li>
-                                <li>
-                                    услуга перевозки (трансфера);
-                                </li>
-                                <li>
-                                    услуги гида-переводчика;
-                                </li>
-                                <li>
-                                    услуги туристические информационные (перечень достопримечательностей г. Минска, 
-                                    г. Витебска, ближайшие к месту проживания, объекты общественного питания, магазины, 
-                                    их месторасположение и график работы);
-                                </li>
-                                <li>
-                                    услуги по предоставлению права принять участие в азартных играх в игорном 
-                                    заведении Исполнителя (Казино «М-1»);
-                                </li>
-                            </ul>
-                            <p>
-                                Стороны заключают дополнительное соглашение к договору с указанием в нем данных услуг и порядка 
-                                их оплаты.
-                            </p>
-                            <p>
-                                После оплаты выбранного туристического пакета на указанный Заказчиком адрес электронной почты 
-                                будет отправлено подтверждение его приобретения.
-                            </p>
-                            <p>
-                                (В зависимости от оплаченного туристического пакета также будет отправлено подтверждение 
-                                приобретения авиа (жд) билета и (или) проживания в отеле).
-                            </p>
-                        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tours">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__title">Условия туров</div>
+        <div class="section__subtitle">
+          Мы прислушиваемся к каждому гостю и стараемся учесть все пожелания и предпочтения
+        </div>
+      </div>
+      <div class="section__content">
+        <div class="tour">
+          <div class="tour-slider"></div>
+          <div class="tour-info">
+            <div class="tour-info__title">
+              <div class="tour-info__title-name">Турпакет №10</div>
+              <div class="tour-info__title-days">1 сутки</div>
+            </div>
+            <div class="tour-info__items">
+              <div class="card">
+                <div class="card__title">
+                  Размещение
+                </div>
+                <div class="card__body">
+                  Проживание в гостинице «М-1», тип номера: Стандартный номер dbl* или twin*
+                  <ul class="card__notes">
+                    <li>Dbl - номер со спальным местом размером 160х200 см.</li>
+                    <li>Twin - номер с двумя спальными местами размером 90х200 см.</li>
+                  </ul>
+                </div>
+                <div class="card__price"></div>
+              </div>
+              <div class="card">
+                <div class="card__title">
+                  Питание
+                </div>
+                <div class="card__body">
+                  Сертификат на услуги общественного питания в баре «М-1»
+                </div>
+                <div class="card__price"></div>
+              </div>
+              <div class="card">
+                <div class="card__title">
+                  Организация экскурсионного обслуживания
+                </div>
+                <div class="card__price">
+                </div>
+              </div>
+            </div>
+            <div class="badge badge--primary tour-info__price">
+              <div class="badge__text tour-info__price-value">Стоимость: 330.00 BYN</div>
+              <div class="badge__note tour-info__price-note">стоимость без учета авиа и/или ЖД</div>
+            </div>
+          </div>
+        </div>
+        <div class="tour">
+          <div class="tour-slider"></div>
+          <div class="tour-info">
+            <div class="tour-info__title">
+              <div class="tour-info__title-name">Турпакет №14</div>
+              <div class="tour-info__title-days">2 суток</div>
+            </div>
+            <div class="tour-info__items">
+              <div class="card">
+                <div class="card__title">
+                  Размещение
+                </div>
+                <div class="card__body">
+                  Проживание в гостинице «М-1», тип номера: Номер люкс dbl*
+                  <ul class="card__notes">
+                    <li>Dbl - номер со спальным местом размером 160х200 см.</li>
+                  </ul>
+                </div>
+                <div class="card__price"></div>
+              </div>
+              <div class="card">
+                <div class="tour-info__title">
+                  Питание
+                </div>
+                <div class="card__body">
+                  Сертификат на услуги общественного питания в баре «М-1»
+                </div>
+                <div class="card__price"></div>
+              </div>
+              <div class="card">
+                <div class="card__title">
+                  Организация экскурсионного обслуживания
+                </div>
+                <div class="card__price"></div>
+              </div>
+            </div>
+            <div class="tour-info__price">
+              <div class="tour-info__price-value">Стоимость: 630.00 BYN</div>
+              <div class="tour-info__price-note">стоимость без учета авиа и/или ЖД</div>
+            </div>
+          </div>
+        </div>
+        <div class="tour">
+          <div class="tour-slider"></div>
+          <div class="tour-info">
+            <div class="tour-info__title">
+              <div class="tour-info__title-name">Турпакет №18</div>
+              <div class="tour-info__title-days">3 суток</div>
+            </div>
+            <div class="tour-info__items">
+              <div class="card">
+                <div class="card__title">
+                  Размещение
+                </div>
+                <div class="card__body">
+                  Проживание в гостинице «М-1», тип номера: Президентский dbl*
+                  <ul class="card__notes">
+                    <li>Dbl - номер со спальным местом размером 160х200 см.</li>
+                    <li>Twin - номер с двумя спальными местами размером 90х200 см.</li>
+                  </ul>
+                </div>
+                <div class="card__price">
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__title">
+                  Питание
+                </div>
+                <div class="card__body">
+                  Сертификат на услуги общественного питания в баре «М-1»
+                </div>
+                <div class="card__price"></div>
+              </div>
+              <div class="card">
+                <div class="card__title">
+                  Организация экскурсионного обслуживания
+                </div>
+                <div class="card__price"></div>
+              </div>
+            </div>
+            <div class="tour-info__price">
+              <div class="tour-info__price-value">Стоимость: 1&nbsp;130.00 BYN</div>
+              <div class="tour-info__price-note">стоимость без учета авиа и/или ЖД</div>
+            </div>
+          </div>
+        </div>
+        <div class="tour">
+          <div class="tour-slider"></div>
+          <div class="tour-info">
+            <div class="tour-info__title">
+              <div class="tour-info__title-name">Турпакет №21</div>
+              <div class="tour-info__title-days">1 сутки</div>
+            </div>
+            <div class="tour-info__items">
+              <div class="card">
+                <div class="card__title">
+                  VIP-трансфер BUSINESS класс
+                </div>
+                <div class="card__body">
+                  Автомобиль BUSINESS класса, 1(одна) поездка
+                  <ul class="card__notes">
+                    <li>Национальный аэропорт Минск — Вокзал станции
+                      Орша-Центральная или Вокзал станции Орша-Центральная — Национальный аэропорт Минск
                     </li>
-                    <li class="rules__item">
-                        <div class="rules__item-title">Исполнитель вправе отказаться</div>
-                        <div class="rules__item-text">
-                            <p>
-                                Отказаться от исполнения обязательств по ДОГОВОРУ возможно лишь при условии полного возмещения 
-                                Заказчику убытков.</p>
-                            <p>
-                                В случае отказа Исполнителя от исполнения обязательств по ДОГОВОРУ во время совершения 
-                                туристического путешествия Исполнитель обязан по желанию Заказчика и (или) туристов организовать 
-                                их возвращение в место начала (окончания) туристического путешествия на условиях, 
-                                предусмотренных ДОГОВОРОМ, либо на условиях более высокого уровня.
-                            </p>
-                            <p>
-                                В случае отказа Заказчика от использования, предоставленного и оплаченного по ДОГОВОРУ 
-                                права принятия участия в азартных играх, независимо от причин данного отказа, денежные 
-                                средства подлежат возврату Исполнителем в порядке, определённом Сторонами путём подписания 
-                                дополнительного соглашения к ДОГОВОРУ, с обязательным указанием в нем банковских 
-                                реквизитов (счета) Заказчика, на который необходимо произвести возврат.
-                            </p>
-                            <p>
-                                При этом возврат денежных средств (возвращённых несыгравших ставок) производится за 
-                                вычетом 5% подоходного налога, расходов, возникающих у Исполнителя в связи с возвратом 
-                                (комиссионные вознаграждения банка за перевод и т.д.). Кроме того, Заказчик обязан письменно 
-                                сообщить Исполнителю причины отказа от ДОГОВОРА. При этом датой возврата считается день 
-                                списания денежных средств со счета Исполнителя.
-                            </p>
-                            <p>
-                                Возврат денежных средств Заказчику в связи с отказом от туристического путешествия, 
-                                перерасчётом стоимости туристических услуг, а также любые возвраты по претензии осуществляется 
-                                Исполнителем в течение 2 (двух) банковских дней после принятия решения об удовлетворении 
-                                претензии или решения о возврате.
-                            </p>
-                        </div>
-                    </li>
-
-                </ol>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section--howto">
-        <div class="container">
-            <div class="section__header">
-                <div class="section__title"></div>
-                <div class="section__subtitle"></div>
-            </div>
-            <div class="section__subtitle"></div>
-            <div class="section__content">
-                <div class="howto__block howto__block--contacts"></div>
-                <div class="howto__block howto__block--about"></div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__blocks">
-                <div class="footer__block">
-                    <div class="footer__block-title"></div>
-                    <div class="footer__block-content"></div>
+                  </ul>
                 </div>
-                <div class="footer__block footer__block--contacts">
-                    <div class="footer__block-title"></div>
-                    <div class="footer__block-content"></div>
+                <div class="card__price">
                 </div>
-                <div class="footer__block footer__block--about">
-                    <div class="footer__block-title"></div>
-                    <div class="footer__block-content"></div>
+              </div>
+              <div class="card">
+                <div class="card__title">
+                  Питание
                 </div>
+                <div class="card__body">
+                  Сертификат на услуги общественного питания в баре «М-1»
+                </div>
+                <div class="card__price"></div>
+              </div>
+              <div class="card">
+                <div class="card__title">
+                  Организация экскурсионного обслуживания
+                </div>
+                <div class="card__price"></div>
+              </div>
             </div>
-            <div class="footer__socials">
-                <div class="footer__social"></div>
-                <div class="footer__social"></div>
-                <div class="footer__social"></div>
-                <div class="footer__social"></div>
+            <div class="tour-info__price">
+              <div class="tour-info__price-value">Стоимость: 1&nbsp;130.00 BYN</div>
+              <div class="tour-info__price-note">стоимость без учета авиа и/или ЖД</div>
             </div>
-            <div class="footer__links">
-                <div class="footer__link"></div>
-                <div class="footer__link"></div>
-                <div class="footer__link"></div>
-                <div class="footer__link"></div>
-                <div class="footer__link"></div>
-                <div class="footer__link"></div>
-                <div class="footer__link"></div>
-                <div class="footer__link"></div>
-            </div>
+          </div>
         </div>
-    </footer>
-    
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/splide.min.js"></script>
-  </body>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--rules">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__title">Порядок оказания услуг</div>
+        <div class="section__subtitle"></div>
+      </div>
+      <div class="section__content">
+        <ol class="rules__list">
+          <li class="rules__item">
+            <div class="rules__item-title">Сроки и порядок оплаты туристических услуг</div>
+            <div class="rules__item-text">
+              <p>Производится Заказчиком:</p>
+              <ul class="rules__item-list">
+                <li>на расчетный счет Исполнителя, или</li>
+                <li>в кассу туристических услуг Исполнителя</li>
+              </ul>
+              <p>Форма оплаты: 100% предоплата.</p>
+              <p>
+                В случае возникновения необходимости в получении Заказчиком туристических, а также
+                дополнительных услуг, не вошедших в туристическое путешествие к ДОГОВОРУ:
+              </p>
+              <ul class="rules__item-list">
+                <li>
+                  услуги по оформлению въездных документов на маршруты туристического путешествия в
+                  Республику Беларусь (услуги визовой поддержки туристов, услуги по доставке документов
+                  в консульские учреждения);
+                </li>
+                <li>
+                  услуга по размещению (организация, обеспечение) проживания, бронирование мест
+                  временного проживания;
+                </li>
+                <li>
+                  организация по экскурсионному обслуживанию;
+                </li>
+                <li>
+                  услуга по организации питания туриста;
+                </li>
+                <li>
+                  услуга перевозки (трансфера);
+                </li>
+                <li>
+                  услуги гида-переводчика;
+                </li>
+                <li>
+                  услуги туристические информационные (перечень достопримечательностей г. Минска,
+                  г. Витебска, ближайшие к месту проживания, объекты общественного питания, магазины,
+                  их месторасположение и график работы);
+                </li>
+                <li>
+                  услуги по предоставлению права принять участие в азартных играх в игорном
+                  заведении Исполнителя (Казино «М-1»);
+                </li>
+              </ul>
+              <p>
+                Стороны заключают дополнительное соглашение к договору с указанием в нем данных услуг и порядка
+                их оплаты.
+              </p>
+              <p>
+                После оплаты выбранного туристического пакета на указанный Заказчиком адрес электронной почты
+                будет отправлено подтверждение его приобретения.
+              </p>
+              <p>
+                (В зависимости от оплаченного туристического пакета также будет отправлено подтверждение
+                приобретения авиа (жд) билета и (или) проживания в отеле).
+              </p>
+            </div>
+          </li>
+          <li class="rules__item">
+            <div class="rules__item-title">Исполнитель вправе отказаться</div>
+            <div class="rules__item-text">
+              <p>
+                Отказаться от исполнения обязательств по ДОГОВОРУ возможно лишь при условии полного возмещения
+                Заказчику убытков.</p>
+              <p>
+                В случае отказа Исполнителя от исполнения обязательств по ДОГОВОРУ во время совершения
+                туристического путешествия Исполнитель обязан по желанию Заказчика и (или) туристов организовать
+                их возвращение в место начала (окончания) туристического путешествия на условиях,
+                предусмотренных ДОГОВОРОМ, либо на условиях более высокого уровня.
+              </p>
+              <p>
+                В случае отказа Заказчика от использования, предоставленного и оплаченного по ДОГОВОРУ
+                права принятия участия в азартных играх, независимо от причин данного отказа, денежные
+                средства подлежат возврату Исполнителем в порядке, определённом Сторонами путём подписания
+                дополнительного соглашения к ДОГОВОРУ, с обязательным указанием в нем банковских
+                реквизитов (счета) Заказчика, на который необходимо произвести возврат.
+              </p>
+              <p>
+                При этом возврат денежных средств (возвращённых несыгравших ставок) производится за
+                вычетом 5% подоходного налога, расходов, возникающих у Исполнителя в связи с возвратом
+                (комиссионные вознаграждения банка за перевод и т.д.). Кроме того, Заказчик обязан письменно
+                сообщить Исполнителю причины отказа от ДОГОВОРА. При этом датой возврата считается день
+                списания денежных средств со счета Исполнителя.
+              </p>
+              <p>
+                Возврат денежных средств Заказчику в связи с отказом от туристического путешествия,
+                перерасчётом стоимости туристических услуг, а также любые возвраты по претензии осуществляется
+                Исполнителем в течение 2 (двух) банковских дней после принятия решения об удовлетворении
+                претензии или решения о возврате.
+              </p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--howto">
+    <div class="container">
+      <div class="section__header">
+        <div class="section__title">Как заказать услугу?</div>
+      </div>
+      <div class="section__content">
+        <div class="howto__block howto__block--contacts">
+          <div class="howto__block-title">
+            Для оформления заявки свяжитесь с нами по номеру телефона:
+          </div>
+          <div class="howto__block-content">
+            + 375 (21) 375 30 04
+          </div>
+        </div>
+        <div class="howto__block howto__block--about">
+          <div class="howto__block-title">
+            Или оставьте заявку по электронной почте и мы свяжемся с вами в ближайшее время:
+          </div>
+          <div class="howto__block-content">
+            info@m1club.by
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-info">
+    <div class="container">
+      <div class="section__content">
+        <div class="section-info__title">
+          Не знаете с чего начать?
+        </div>
+        <div class="section-info__content">
+          Оставьте заявку — и наш менеджер свяжется с вами.
+          Поможем подобрать гостевой тур с учётом ваших пожеланий.
+          Гарантируем качественный сервис, комфортное проживание и питание.
+          Возможна индивидуальная комплектация туров.
+        </div>
+        <div class="section-info__button">
+          <a href="#" class="btn btn--primary">Связаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__blocks">
+        <div class="footer__block">
+          <div class="footer__block-title"></div>
+          <div class="footer__block-content"></div>
+        </div>
+        <div class="footer__block footer__block--contacts">
+          <div class="footer__block-title"></div>
+          <div class="footer__block-content"></div>
+        </div>
+        <div class="footer__block footer__block--about">
+          <div class="footer__block-title"></div>
+          <div class="footer__block-content"></div>
+        </div>
+      </div>
+      <div class="footer__socials">
+        <div class="footer__social"></div>
+        <div class="footer__social"></div>
+        <div class="footer__social"></div>
+        <div class="footer__social"></div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__link"></div>
+        <div class="footer__link"></div>
+        <div class="footer__link"></div>
+        <div class="footer__link"></div>
+        <div class="footer__link"></div>
+        <div class="footer__link"></div>
+        <div class="footer__link"></div>
+        <div class="footer__link"></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/splide.min.js"></script>
+</body>
+
 </html>
