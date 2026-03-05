@@ -50,4 +50,8 @@
     --bp-desktop-lg: 1440px;  /* large desktops */
 
     --nav-height: 60px;
+
+    --section-margin-top: 50px;
+    
+    --container-padding-x-mobile: 20px;
 }

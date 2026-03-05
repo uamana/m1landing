@@ -12,11 +12,11 @@ body {
 /* Container */
 .container {
     width: 100%;
-    padding: 0 5px;
+    padding: 0 var(--container-padding-x-mobile);
     flex-grow: 1;
 }
 
-@media (min-width: var(--bp-desktop-lg)) {
+@media (min-width: 1440px) {
     .container {
         max-width: 1440px;
         margin: 0 auto;

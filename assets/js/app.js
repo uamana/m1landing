@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', function() {
         direction: 'ltr',
         wheel: true,
         releaseWheel: true,
-        heightRatio: 0.8,
+        heightRatio: 0.7,
         pagination: false,
-        fixedWidth: "80%",
+        fixedWidth: "70%",
         gap: "3rem",
         arrows: false,
     }).mount();
