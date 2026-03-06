@@ -224,7 +224,7 @@ p:not(:first-child) {
     display: flex;
     align-items: stretch;
     flex-shrink: 0;
-    min-width: var(--nav-height);
+    max-width: var(--logo-width-mobile);
 }
 
 .nav__links {
@@ -266,6 +266,10 @@ p:not(:first-child) {
     .nav__text {
         font-size: var(--font-size-14);
         color: var(--color-text-muted);
+    }
+
+    .nav__brand {
+        max-width: var(--logo-width-desktop);
     }
 }
 
@@ -893,7 +897,8 @@ p:not(:first-child) {
 }
 
 .footer__mobile-logo {
-    max-width: 100px;
+    max-width: var(--logo-width-mobile);
+    margin-bottom: 1rem;
 }
 
 .footer-mobile__block {
@@ -926,6 +931,11 @@ p:not(:first-child) {
     .footer__block-title {
         font-size: var(--font-size-28);
         font-weight: var(--font-weight-semibold);
+    }
+
+    .footer--desktop-logo {
+        max-width: 200px;
+        margin-bottom: 1rem;
     }
 
     .footer__blocks {

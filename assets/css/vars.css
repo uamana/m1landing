@@ -55,4 +55,7 @@
     --section-margin-top: 50px;
     
     --container-padding-x-mobile: 20px;
+
+    --logo-width-mobile: 100px;
+    --logo-width-desktop: 200px;
 }
