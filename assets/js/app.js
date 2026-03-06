@@ -40,14 +40,22 @@ document.addEventListener('DOMContentLoaded', function() {
         splidePrincipals = initOrDestroySplide("#principals .splide", splidePrincipals, splidePrincipalsConfig);
     });
 
+
+    const tourSliderConfig = {
+        type: 'loop',
+        pagination: false,
+        arrows: true,
+        gap: '1.5rem',
+    };
+
     // Tours slider (always enabled on all screen sizes)
-    const tourSliderEl = document.querySelector('#tours .tour-slider .splide');
-    if (tourSliderEl) {
-        new Splide(tourSliderEl, {
-            type: 'loop',
-            pagination: false,
-            arrows: true,
-            gap: '1.5rem',
-        }).mount();
+    const tourSlider10El = document.querySelector('#tour-slider-10');
+    if (tourSlider10El) {
+        new Splide(tourSlider10El, tourSliderConfig).mount();
+    }
+
+    const tourSlider14El = document.querySelector('#tour-slider-14');
+    if (tourSlider14El) {
+        new Splide(tourSlider14El, tourSliderConfig).mount();
     }
 });

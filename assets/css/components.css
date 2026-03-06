@@ -560,7 +560,7 @@ p:not(:first-child) {
     width: 100%;
     aspect-ratio: 4 / 3;
     min-height: 200px;
-    border-radius: var(--border-radius-sm);
+    border-radius: var(--border-radius);
     overflow: hidden;
     margin-bottom: 1rem;
 }
@@ -630,6 +630,10 @@ p:not(:first-child) {
         grid-template-columns: 1fr 1fr;
         column-gap: 2rem;
         align-items: stretch;
+    }
+
+    .tour:not(:last-child) {
+        margin-bottom: 4rem;
     }
 
     .tour-slider {
@@ -895,13 +899,12 @@ p:not(:first-child) {
 }
 
 .footer__link {
-    max-height: 30px;
     flex: 0 1 auto;
 }
 
 .footer__link img {
-    max-height: 100%;
-    max-width: unset;
+    height: 20px;
+    width: auto;
     object-fit: contain;
     opacity: 0.5;
     transition: opacity 0.3s ease;
@@ -1020,8 +1023,7 @@ p:not(:first-child) {
         grid-template-columns: repeat(8, 1fr);
     }
 
-    .fooer__link {
-        max-height: 40px;
-        flex: 1 0 auto;
+    .footer__link img {
+        height: 40px;
     }
 }
