@@ -8,6 +8,7 @@
     --color-text-primary: #ffffff;
     --color-text-secondary: #B80414;
     --color-text-dark: #000000;
+    --color-text-muted: #aaa;
     --gold: linear-gradient(
         92deg, #FDB068 0.78%, #ECAD70 17.24%, #F7C38D 33.71%, #F8E2BE 50.17%,
         #F8DBB2 66.64%, #FCC386 83.11%, #FEB066 99.57%
