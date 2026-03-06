@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const splideSelector = '.splide';
+    const splideSelector = '#principals .splide';
     const MOBILE_MAX_WIDTH = 767; // slider only below tablet
 
     let splideInstance = null;
@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!isMobile && splideInstance) {
             splideInstance.destroy(true);
             splideInstance = null;
+            el.classList.remove('is-initialized', 'is-overflow');
         }
     }
 
