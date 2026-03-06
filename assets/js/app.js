@@ -39,4 +39,15 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function() {
         splidePrincipals = initOrDestroySplide("#principals .splide", splidePrincipals, splidePrincipalsConfig);
     });
+
+    // Tours slider (always enabled on all screen sizes)
+    const tourSliderEl = document.querySelector('#tours .tour-slider .splide');
+    if (tourSliderEl) {
+        new Splide(tourSliderEl, {
+            type: 'loop',
+            pagination: false,
+            arrows: true,
+            gap: '1.5rem',
+        }).mount();
+    }
 });
