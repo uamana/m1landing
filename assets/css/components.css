@@ -758,14 +758,14 @@ p:not(:first-child) {
 
 /* section-info */
 
-.section-info {
+.section-info .container {
     position: relative;
 }
 
-.section-info::after {
+.section-info .container::after {
     content: '';
     position: absolute;
-    top: calc(var(--section-margin-top) / -2.5);
+    top: calc(var(--section-margin-top) / -3);
     left: calc(var(--container-padding-x-mobile) / 2);
     width: 60%;
     height: 100%;
@@ -808,7 +808,7 @@ p:not(:first-child) {
         padding-bottom: 4.6rem;
     }
 
-    .section-info::after {
+    .section-info .container::after {
         top: calc(var(--section-margin-top) / -2);
         width: 30%
     }
