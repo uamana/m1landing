@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initial check
-    initOrDestroySplide();
+    initOrDestroySplide("#principals .splide", splidePrincipals, splidePrincipalsConfig);
 
     // Re-check on resize
     window.addEventListener('resize', function() {

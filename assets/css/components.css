@@ -294,10 +294,19 @@ p:not(:first-child) {
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 20px;
-    background: 
+    /* Fallback for browsers without WebP support */
+    background:
         linear-gradient(rgba(30, 30, 30, 0.60), rgba(30, 30, 30, 0.60)),
         url('../images/header-bg.jpg') no-repeat 90% center / cover;
     border-radius: var(--border-radius-sm);
+}
+
+@supports (background-image: url("../images/header-bg.webp")) {
+    .header__wrapper {
+        background:
+            linear-gradient(rgba(30, 30, 30, 0.60), rgba(30, 30, 30, 0.60)),
+            url('../images/header-bg.webp') no-repeat 90% center / cover;
+    }
 }
 
 .header__wrapper::after {
