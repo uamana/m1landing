@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const MOBILE_MAX_WIDTH = 767; // slider only below tablet
+    const TOURS_SLIDER_MAX_WIDTH = 991; // tours-as-slider below desktop
 
     let splidePrincipals = null;
     const splidePrincipalsConfig = {
@@ -40,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         splidePrincipals = initOrDestroySplide("#principals .splide", splidePrincipals, splidePrincipalsConfig);
     });
 
-
     const tourSliderConfig = {
         type: 'loop',
         pagination: false,
@@ -48,14 +48,58 @@ document.addEventListener('DOMContentLoaded', function() {
         gap: '1.5rem',
     };
 
-    // Tours slider (always enabled on all screen sizes)
-    const tourSlider10El = document.querySelector('#tour-slider-10');
-    if (tourSlider10El) {
-        new Splide(tourSlider10El, tourSliderConfig).mount();
+    /* Mount inner tour image sliders after outer tours slider so nested Splide inits don't conflict */
+    function initTourImageSliders() {
+        var el10 = document.querySelector('#tour-slider-10');
+        if (el10) {
+            new Splide('#tour-slider-10', tourSliderConfig).mount();
+        }
+        var el14 = document.querySelector('#tour-slider-14');
+        if (el14) {
+            new Splide('#tour-slider-14', tourSliderConfig).mount();
+        }
     }
 
-    const tourSlider14El = document.querySelector('#tour-slider-14');
-    if (tourSlider14El) {
-        new Splide(tourSlider14El, tourSliderConfig).mount();
+    if (window.innerWidth <= TOURS_SLIDER_MAX_WIDTH) {
+        requestAnimationFrame(initTourImageSliders);
+    } else {
+        initTourImageSliders();
     }
+
+    
+
+    // Tours wrapper: on mobile/tablet all .tour cards in one slider (no arrows, no pagination)
+    let splideToursMobile = null;
+    const toursMobileSliderConfig = {
+        type: 'slide',
+        perPage: 1,
+        pagination: false,
+        arrows: false,
+        gap: '1rem',
+        drag: true,
+    };
+
+    function initOrDestroyToursSlider() {
+        const useSlider = window.innerWidth <= TOURS_SLIDER_MAX_WIDTH;
+        const el = document.querySelector('#tours-mobile-slider');
+        if (!el) return splideToursMobile;
+
+        if (useSlider && !splideToursMobile) {
+            splideToursMobile = new Splide('#tours-mobile-slider', toursMobileSliderConfig);
+            splideToursMobile.mount();
+        }
+        if (!useSlider && splideToursMobile) {
+            splideToursMobile.destroy(true);
+            splideToursMobile = null;
+            el.classList.remove('is-initialized', 'is-overflow');
+        }
+        return splideToursMobile;
+    }
+
+    initOrDestroyToursSlider();
+    window.addEventListener('resize', function() {
+        splideToursMobile = initOrDestroyToursSlider();
+    });
+
+    
 });
