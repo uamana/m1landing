@@ -14,8 +14,21 @@ document.addEventListener('DOMContentLoaded', function() {
         arrows: false,
     };
 
-    function initOrDestroySplide(selector, splideInstance, config) {
-        const isMobile = window.innerWidth <= MOBILE_MAX_WIDTH;
+    let splideToursMobile = null;
+    const toursMobileSliderConfig = {
+        type: 'slide',
+        perPage: 1,
+        pagination: false,
+        arrows: true,
+        gap: '1rem',
+        drag: true,
+        classes: {
+            arrows: 'tours-mobile-slider__arrows',
+        },
+    };
+
+    function initOrDestroySplide(selector, splideInstance, breakpoint, config) {
+        const isMobile = window.innerWidth <= breakpoint;
         const el = document.querySelector(selector);
 
         if (!el) return;
@@ -34,11 +47,23 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Initial check
-    initOrDestroySplide("#principals .splide", splidePrincipals, splidePrincipalsConfig);
+    initOrDestroySplide("#principals .splide", splidePrincipals, MOBILE_MAX_WIDTH, splidePrincipalsConfig);
+    initOrDestroySplide("#tours-mobile-slider", splideToursMobile, TOURS_SLIDER_MAX_WIDTH, toursMobileSliderConfig);
 
     // Re-check on resize
     window.addEventListener('resize', function() {
-        splidePrincipals = initOrDestroySplide("#principals .splide", splidePrincipals, splidePrincipalsConfig);
+        splidePrincipals = initOrDestroySplide(
+            "#principals .splide", 
+            splidePrincipals, 
+            MOBILE_MAX_WIDTH, 
+            splidePrincipalsConfig
+        );
+        splideToursMobile = initOrDestroySplide(
+            "#tours-mobile-slider", 
+            splideToursMobile, 
+            TOURS_SLIDER_MAX_WIDTH, 
+            toursMobileSliderConfig
+        );
     });
 
     const tourSliderConfig = {
@@ -48,58 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
         gap: '1.5rem',
     };
 
-    /* Mount inner tour image sliders after outer tours slider so nested Splide inits don't conflict */
-    function initTourImageSliders() {
-        var el10 = document.querySelector('#tour-slider-10');
-        if (el10) {
-            new Splide('#tour-slider-10', tourSliderConfig).mount();
-        }
-        var el14 = document.querySelector('#tour-slider-14');
-        if (el14) {
-            new Splide('#tour-slider-14', tourSliderConfig).mount();
-        }
+    const el10 = document.querySelector('#tour-slider-10');
+    if (el10) {
+        new Splide('#tour-slider-10', tourSliderConfig).mount();
     }
-
-    if (window.innerWidth <= TOURS_SLIDER_MAX_WIDTH) {
-        requestAnimationFrame(initTourImageSliders);
-    } else {
-        initTourImageSliders();
+    const el14 = document.querySelector('#tour-slider-14');
+    if (el14) {
+        new Splide('#tour-slider-14', tourSliderConfig).mount();
     }
-
-    
-
-    // Tours wrapper: on mobile/tablet all .tour cards in one slider (no arrows, no pagination)
-    let splideToursMobile = null;
-    const toursMobileSliderConfig = {
-        type: 'slide',
-        perPage: 1,
-        pagination: false,
-        arrows: false,
-        gap: '1rem',
-        drag: true,
-    };
-
-    function initOrDestroyToursSlider() {
-        const useSlider = window.innerWidth <= TOURS_SLIDER_MAX_WIDTH;
-        const el = document.querySelector('#tours-mobile-slider');
-        if (!el) return splideToursMobile;
-
-        if (useSlider && !splideToursMobile) {
-            splideToursMobile = new Splide('#tours-mobile-slider', toursMobileSliderConfig);
-            splideToursMobile.mount();
-        }
-        if (!useSlider && splideToursMobile) {
-            splideToursMobile.destroy(true);
-            splideToursMobile = null;
-            el.classList.remove('is-initialized', 'is-overflow');
-        }
-        return splideToursMobile;
-    }
-
-    initOrDestroyToursSlider();
-    window.addEventListener('resize', function() {
-        splideToursMobile = initOrDestroyToursSlider();
-    });
-
-    
 });
