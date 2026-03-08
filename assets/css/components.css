@@ -873,6 +873,15 @@ p:not(:first-child) {
     font-size: var(--font-size-10);
 }
 
+.rules__button {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.rules__button-link {
+    font-size: var(--font-size-10);
+}
+
 @media (min-width: 768px) {
     .rules__list {
         font-size: var(--font-size-18);
@@ -883,6 +892,14 @@ p:not(:first-child) {
     }
 
     .rules__item-text {
+        font-size: var(--font-size-14);
+    }
+
+    .rules__button {
+        text-align: right;
+    }
+    
+    .rules__button-link {
         font-size: var(--font-size-14);
     }
 }
@@ -1148,11 +1165,11 @@ p:not(:first-child) {
     margin-bottom: 1rem;
 }
 
-.footer-mobile__block {
+.footer__mobile-block {
     flex: 1 1 auto;
 }
 
-.footer-mobile__title {
+.footer__mobile-title {
     font-size: var(--font-size-20);
     font-weight: var(--font-weight-semibold);
     margin-bottom: 1rem;
