@@ -81,4 +81,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (el14) {
         new Splide('#tour-slider-14', tourSliderConfig).mount();
     }
+    const el18 = document.querySelector('#tour-slider-18');
+    if (el18) {
+        new Splide('#tour-slider-18', tourSliderConfig).mount();
+    }
+    const el21 = document.querySelector('#tour-slider-21');
+    if (el21) {
+        new Splide('#tour-slider-21', tourSliderConfig).mount();
+    }
 });
